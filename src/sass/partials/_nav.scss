@@ -1,0 +1,45 @@
+$mobile-width: 900px;
+
+#block-oc-law-firm-main-menu {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline;
+      a {
+        font-size: 18px;
+        line-height: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #999;
+        padding: 0 11px;
+      }
+    }
+  }
+}
+
+#header-container {
+  div:nth-child(2) {
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+}
+
+#close-menu,
+#menu-overlay,
+#menu-button {
+  display: none;
+}
+
+#menu-button {
+  svg {
+    width: 40px;
+    fill: #666;
+  }
+  cursor: pointer;
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}

@@ -36,23 +36,6 @@ footer > div {
   vertical-align: middle;
 }
 
-#block-oc-law-firm-main-menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-#block-oc-law-firm-main-menu ul li {
-  display: inline;
-}
-#block-oc-law-firm-main-menu ul li a {
-  font-size: 18px;
-  line-height: 18px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #999;
-  padding: 0 11px;
-}
-
 main {
   padding-top: 70px;
 }
@@ -85,9 +68,55 @@ main {
   line-height: 32px;
   font-weight: 600;
   color: #273b81;
+  margin-top: 30px;
+}
+#block-oc-law-firm-content article {
+  margin: 40px 0;
 }
 
 footer {
   background-color: #ebebeb;
   color: #666666;
+}
+
+#block-oc-law-firm-main-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#block-oc-law-firm-main-menu ul li {
+  display: inline;
+}
+#block-oc-law-firm-main-menu ul li a {
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #999;
+  padding: 0 11px;
+}
+
+@media (max-width: 900px) {
+  #header-container div:nth-child(2) {
+    display: none;
+  }
+}
+
+#close-menu,
+#menu-overlay,
+#menu-button {
+  display: none;
+}
+
+#menu-button {
+  cursor: pointer;
+}
+#menu-button svg {
+  width: 40px;
+  fill: #666;
+}
+@media (max-width: 900px) {
+  #menu-button {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

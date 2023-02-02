@@ -1,0 +1,86 @@
+$base-color: #273b81;
+$max-width: 1100px;
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #666;
+}
+
+header {
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+}
+
+#header-container,
+#block-oc-law-firm-content,
+footer > div {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#header-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  height: 100%;
+}
+
+#block-oc-law-firm-site-branding {
+  img {
+    width: 288px;
+    height: 42px;
+    vertical-align: middle;
+  }
+}
+
+main {
+  padding-top: 70px;
+}
+
+#block-oc-law-firm-page-title {
+  background-color: $base-color;
+  h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: normal;
+    margin: 0;
+    padding: 20px 0;
+  }
+}
+
+#block-oc-law-firm-content {
+  p,
+  li {
+    font-size: 16px;
+    line-height: 26px;
+    img {
+      max-width: 300px;
+      height: auto;
+    }
+  }
+  h2 {
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: 600;
+    color: $base-color;
+    margin-top: 30px;
+  }
+  article {
+    margin: 40px 0;
+  }
+}
+
+footer {
+  background-color: #ebebeb;
+  color: #666666;
+}
