@@ -20,7 +20,7 @@ $mobile-width: 900px;
 }
 
 #header-container {
-  div:nth-child(2) {
+  > div:nth-child(2) {
     @media (max-width: $mobile-width) {
       display: none;
     }
@@ -34,12 +34,69 @@ $mobile-width: 900px;
 }
 
 #menu-button {
-  svg {
-    width: 40px;
-    fill: #666;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 22px;
+  div {
+    width: 30px;
+    height: 3px;
+    background-color: #666;
   }
   cursor: pointer;
   @media (max-width: $mobile-width) {
-    display: block;
+    display: flex;
   }
+}
+
+/* Nav Animations */
+@keyframes slidein {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes slideout {
+  from {
+    right: 0;
+  }
+  to {
+    right: -100%;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.slidein {
+  animation: slidein 1s;
+}
+
+.slideout {
+  animation: slideout 1s;
+}
+
+.fadein {
+  animation: fadein 1s;
+}
+
+.fadeout {
+  animation: fadeout 1s;
 }
