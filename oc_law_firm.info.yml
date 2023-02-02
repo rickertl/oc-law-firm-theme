@@ -1,0 +1,13 @@
+name: OC Law Firm
+type: theme
+core_version_requirement: ^8 || ^9
+base theme: stable9
+
+regions:
+  header: Header
+  primary_menu: "Primary menu"
+  content: Content
+  footer: Footer
+
+libraries:
+  - oc_law_firm/global-css
