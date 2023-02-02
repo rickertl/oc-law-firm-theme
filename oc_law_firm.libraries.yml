@@ -1,5 +1,9 @@
 global-css:
   version: Version
+  dependencies:
+    - core/normalize
   css:
     theme:
+      //fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap:
+        { type: external }
       css/style.css: {}
