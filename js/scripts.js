@@ -7,11 +7,13 @@ const closeMenu = body.querySelector("#close-menu");
 menuButton.addEventListener(
   "click",
   () => {
-    nav.classList.remove("hidden");
+    menuButton.style.display = "none";
+    closeMenu.style.display = "block";
+    nav.style.display = "block";
     nav.classList.add("slidein");
     overlay.classList.add("fadein");
-    overlay.classList.remove("hidden");
-    body.classList.add("overflow-hidden");
+    overlay.style.display = "block";
+    body.style.overflow = "hidden";
   },
   false
 );
@@ -23,13 +25,15 @@ closeMenu.addEventListener(
     nav.classList.add("slideout");
     overlay.classList.remove("fadein");
     overlay.classList.add("fadeout");
+    menuButton.removeAttribute("style");
+    closeMenu.removeAttribute("style");
     setTimeout(function () {
-      nav.classList.add("hidden");
-      nav.classList.remove("slideout");
-      overlay.classList.remove("fadeout");
-      overlay.classList.add("hidden");
+      nav.removeAttribute("class");
+      nav.removeAttribute("style");
+      overlay.removeAttribute("class");
+      overlay.removeAttribute("style");
     }, 1000);
-    body.classList.remove("overflow-hidden");
+    body.removeAttribute("style");
   },
   false
 );

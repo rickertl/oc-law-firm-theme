@@ -1,3 +1,4 @@
+/* bay-of-many */
 body {
   font-family: "Montserrat", sans-serif;
   color: #666;
@@ -79,26 +80,59 @@ footer {
   color: #666666;
 }
 
+/* bay-of-many */
 #block-oc-law-firm-main-menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 #block-oc-law-firm-main-menu ul li {
-  display: inline;
+  border-top: 1px solid rgba(255, 255, 255, 0.035);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.035);
+  padding: 20px 0 20px 20px;
+}
+@media (min-width: 900px) {
+  #block-oc-law-firm-main-menu ul li {
+    display: inline;
+    border-top: none;
+    border-bottom: none;
+    padding: none;
+  }
 }
 #block-oc-law-firm-main-menu ul li a {
   font-size: 18px;
   line-height: 18px;
   text-decoration: none;
-  text-transform: uppercase;
-  color: #999;
-  padding: 0 11px;
+  color: #fff;
+}
+@media (min-width: 900px) {
+  #block-oc-law-firm-main-menu ul li a {
+    text-transform: uppercase;
+    color: #999;
+    padding: 0 11px;
+  }
 }
 
-@media (max-width: 900px) {
+#header-container > div:nth-child(2) {
+  display: none;
+  background-color: #273b81;
+  width: 80%;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  padding-top: 80px;
+}
+@media (min-width: 900px) {
   #header-container > div:nth-child(2) {
-    display: none;
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    position: static;
+    padding-top: 0;
   }
 }
 
@@ -123,6 +157,23 @@ footer {
   #menu-button {
     display: flex;
   }
+}
+
+#menu-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+}
+
+#close-menu {
+  z-index: 10;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
 }
 
 /* Nav Animations */

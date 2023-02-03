@@ -7,3 +7,8 @@ global-css:
       //fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap:
         { type: external }
       css/style.css: {}
+
+global-js:
+  version: Version
+  js:
+    js/scripts.js: {}
