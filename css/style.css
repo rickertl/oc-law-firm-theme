@@ -27,7 +27,7 @@ footer > div {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  background-color: white;
+  background-color: #fff;
   height: 100%;
 }
 
@@ -73,33 +73,6 @@ main {
 }
 #block-oc-law-firm-content article {
   margin: 40px 0;
-}
-
-#footer {
-  background-color: #ebebeb;
-  color: #666666;
-}
-#footer #footer-columns > div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-}
-
-.location-row {
-  display: grid;
-  grid-template-columns: 40px 1fr;
-  margin-bottom: 20px;
-  align-items: center;
-}
-.location-row svg {
-  width: 24px;
-}
-.location-row .map-icon {
-  align-self: start;
-}
-.location-row p {
-  margin: 0;
 }
 
 /* bay-of-many */
@@ -281,4 +254,60 @@ main {
 .fadeout {
   -webkit-animation: fadeout 1s;
           animation: fadeout 1s;
+}
+
+/* bay-of-many */
+#footer {
+  background-color: #ebebeb;
+  color: #666666;
+}
+#footer #footer-columns > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding: 40px 0 20px;
+}
+#footer #footer-columns > div h2 {
+  color: #273b81;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 26px;
+  margin-top: 0;
+}
+
+.location-row {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.location-row svg {
+  width: 20px;
+  color: #999;
+}
+.location-row .map-icon {
+  align-self: start;
+}
+.location-row p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+nav#block-resources ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+nav#block-resources ul li {
+  border-top: 1px solid #ccc;
+  padding: 6px 0;
+  border-bottom: 1px solid #ccc;
+}
+nav#block-resources ul a {
+  text-decoration: none;
+  color: #666;
+  line-height: 1.5;
+}
+nav#block-resources ul a:hover {
+  color: #273b81;
 }/*# sourceMappingURL=style.css.map */

@@ -28,7 +28,7 @@ footer > div {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  background-color: white;
+  background-color: #fff;
   height: 100%;
 }
 
@@ -76,31 +76,5 @@ main {
   }
   article {
     margin: 40px 0;
-  }
-}
-
-#footer {
-  background-color: #ebebeb;
-  color: #666666;
-  #footer-columns > div {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-    column-gap: 20px;
-  }
-}
-
-.location-row {
-  display: grid;
-  grid-template-columns: 40px 1fr;
-  margin-bottom: 20px;
-  align-items: center;
-  svg {
-    width: 24px;
-  }
-  .map-icon {
-    align-self: start;
-  }
-  p {
-    margin:0;
   }
 }

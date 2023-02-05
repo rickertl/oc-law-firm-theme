@@ -1,0 +1,57 @@
+@import "./variables";
+
+#footer {
+  background-color: #ebebeb;
+  color: #666666;
+  #footer-columns > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    column-gap: 20px;
+    padding: 40px 0 20px;
+    h2 {
+      color: $base-color;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 26px;
+      margin-top: 0;
+    }
+  }
+}
+
+.location-row {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  margin-bottom: 20px;
+  align-items: center;
+  svg {
+    width: 20px;
+    color: #999;
+  }
+  .map-icon {
+    align-self: start;
+  }
+  p {
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+nav#block-resources {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      border-top: 1px solid #ccc;
+      padding: 6px 0;
+      border-bottom: 1px solid #ccc;
+    }
+    a {
+      text-decoration: none;
+      color: #666;
+      line-height: 1.5;
+      &:hover {
+        color: $base-color;
+      }
+    }
+  }
+}
