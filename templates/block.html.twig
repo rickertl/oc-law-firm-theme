@@ -26,21 +26,21 @@
  * @see template_preprocess_block()
  */
 #}
-<div{{ attributes }}>
-  {{ title_prefix }}
-  {% if label %}
-  <h2{{ title_attributes }}>{{ label }}</h2>
-    {% endif %}
-    {{ title_suffix }}
-    {# check if "location" custom block type #}
-    {% if field_field_phone.0 %}
-    {{ field_body.0 }}
-    {{ field_field_phone.0 }}
-    {{ field_field_fax.0 }}
-    {% else %}
-    {# render basic block type #}
-    {% block content %}
-    {{ content }}
-    {% endblock %}
-    {% endif %}
-    </div>
+<div{{attributes}}>
+	{{ title_prefix }}
+	{% if label %}
+		<h2{{title_attributes}}>{{ label }}</h2>
+	{% endif %}
+	{{ title_suffix }}
+	{# check if "location" custom block type #}
+	{% if field_field_phone.0 %}
+		{{ field_body.0 }}
+		{{ field_field_phone.0 }}
+		{{ field_field_fax.0 }}
+	{% else %}
+		{# render basic block type #}
+		{% block content %}
+			{{ content }}
+		{% endblock %}
+	{% endif %}
+</div>
