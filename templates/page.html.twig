@@ -83,8 +83,10 @@
 	</main>
 
 	{% if page.footer %}
-		<footer role="contentinfo">
-			{{ page.footer }}
+		<footer role="contentinfo" id="footer">
+			<div id="footer-columns">
+				{{ page.footer }}
+			</div>
 		</footer>
 	{% endif %}
 

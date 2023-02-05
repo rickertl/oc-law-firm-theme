@@ -75,9 +75,31 @@ main {
   margin: 40px 0;
 }
 
-footer {
+#footer {
   background-color: #ebebeb;
   color: #666666;
+}
+#footer #footer-columns > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.location-row {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.location-row svg {
+  width: 24px;
+}
+.location-row .map-icon {
+  align-self: start;
+}
+.location-row p {
+  margin: 0;
 }
 
 /* bay-of-many */
