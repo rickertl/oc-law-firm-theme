@@ -16,7 +16,8 @@ header {
 
 #header-container,
 #block-oc-law-firm-content,
-footer > div {
+footer > div,
+#copyright > div {
   max-width: $max-width;
   margin: 0 auto;
   padding: 0 20px;

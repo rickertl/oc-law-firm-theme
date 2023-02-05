@@ -15,7 +15,8 @@ header {
 
 #header-container,
 #block-oc-law-firm-content,
-footer > div {
+footer > div,
+#copyright > div {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
@@ -310,4 +311,49 @@ nav#block-resources ul a {
 }
 nav#block-resources ul a:hover {
   color: #273b81;
+}
+
+#copyright {
+  background-color: #273b81;
+  color: #999;
+}
+#copyright #copyright-inner-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  #copyright #copyright-inner-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+#copyright #copyright-inner-container > div,
+#copyright #copyright-inner-container #credits a {
+  display: flex;
+  align-items: center;
+}
+#copyright #copyright-inner-container > div a,
+#copyright #copyright-inner-container #credits a a {
+  color: #999;
+  text-decoration: none;
+}
+#copyright #copyright-inner-container > div a:hover,
+#copyright #copyright-inner-container #credits a a:hover {
+  color: #fff;
+}
+#copyright #copyright-inner-container > div #block-sitebranding,
+#copyright #copyright-inner-container #credits a #block-sitebranding {
+  text-align: center;
+}
+#copyright #copyright-inner-container > div #block-sitebranding::before,
+#copyright #copyright-inner-container #credits a #block-sitebranding::before {
+  content: "Copyright ";
+}
+#copyright #copyright-inner-container > div #block-sitebranding::after,
+#copyright #copyright-inner-container #credits a #block-sitebranding::after {
+  content: " - All Rights Reserved";
 }/*# sourceMappingURL=style.css.map */

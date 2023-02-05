@@ -55,3 +55,41 @@ nav#block-resources {
     }
   }
 }
+
+#copyright {
+  background-color: $base-color;
+  color: #999;
+  #copyright-inner-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    @media (min-width: $desktop-start) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    > div,
+    #credits a {
+      display: flex;
+      align-items: center;
+      a {
+        color: #999;
+        text-decoration: none;
+        &:hover {
+          color: #fff;
+        }
+      }
+      #block-sitebranding {
+        text-align: center;
+        &::before {
+          content: "Copyright ";
+        }
+        &::after {
+          content: " - All Rights Reserved";
+        }
+      }
+    }
+  }
+}
