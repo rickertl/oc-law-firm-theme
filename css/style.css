@@ -76,6 +76,18 @@ main {
   margin: 40px 0;
 }
 
+.button-link {
+  display: inline-block;
+  color: #fff;
+  background-color: #273b81;
+  padding: 10px 15px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.button-link:hover {
+  background-color: #999;
+}
+
 /* bay-of-many */
 #block-oc-law-firm-main-menu ul {
   list-style-type: none;

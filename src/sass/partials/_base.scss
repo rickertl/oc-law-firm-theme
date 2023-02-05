@@ -79,3 +79,15 @@ main {
     margin: 40px 0;
   }
 }
+
+.button-link {
+  display: inline-block;
+  color: #fff;
+  background-color: $base-color;
+  padding: 10px 15px;
+  border-radius: 3px;
+  text-decoration: none;
+  &:hover {
+    background-color: #999;
+  }
+}
