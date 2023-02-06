@@ -368,4 +368,49 @@ nav#block-resources ul a:hover {
 #copyright #copyright-inner-container > div #block-sitebranding::after,
 #copyright #copyright-inner-container #credits a #block-sitebranding::after {
   content: " - All Rights Reserved";
+}
+
+/* bay-of-many */
+.practice-areas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+@media (min-width: 900px) {
+  .practice-areas-container {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+.practice-areas-container .practice-square {
+  display: inline-block;
+  position: relative;
+}
+.practice-areas-container .practice-square .practice-image img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+}
+.practice-areas-container .practice-square .practice-image img:hover {
+  filter: grayscale(0);
+}
+.practice-areas-container .practice-square .practice-title {
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px 0;
+  pointer-events: none;
+}
+@media (min-width: 900px) {
+  .practice-areas-container .practice-square .practice-title {
+    font-size: 24px;
+    font-size: calc(100% + 0.6vw);
+  }
 }/*# sourceMappingURL=style.css.map */
