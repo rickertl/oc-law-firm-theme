@@ -113,6 +113,9 @@ main {
   text-decoration: none;
   color: #fff;
 }
+#block-oc-law-firm-main-menu ul li a:hover {
+  color: #273b81;
+}
 @media (min-width: 900px) {
   #block-oc-law-firm-main-menu ul li a {
     text-transform: uppercase;
