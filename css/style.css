@@ -104,7 +104,7 @@ main {
     display: inline;
     border-top: none;
     border-bottom: none;
-    padding: none;
+    padding: 0;
   }
 }
 #block-oc-law-firm-main-menu ul li a {
