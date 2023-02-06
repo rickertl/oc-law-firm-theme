@@ -20,7 +20,8 @@
         line-height: 18px;
         text-decoration: none;
         color: #fff;
-        &:hover {
+        &:hover,
+        &.is-active {
           color: $base-color;
         }
         @media (min-width: $desktop-start) {

@@ -73,10 +73,27 @@ main {
     line-height: 32px;
     font-weight: 600;
     color: $base-color;
-    margin-top: 30px;
   }
   article {
     margin: 40px 0;
+    h2 {
+      margin-top: 30px;
+    }
+    img {
+      max-width: 33%;
+      height: auto;
+      @media (min-width: $desktop-start) {
+        max-width: 300px;
+      }
+      &.align-right {
+        margin: 0 0 10px 20px;
+      }
+    }
+    &::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
   }
 }
 

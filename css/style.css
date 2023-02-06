@@ -70,10 +70,29 @@ main {
   line-height: 32px;
   font-weight: 600;
   color: #273b81;
-  margin-top: 30px;
 }
 #block-oc-law-firm-content article {
   margin: 40px 0;
+}
+#block-oc-law-firm-content article h2 {
+  margin-top: 30px;
+}
+#block-oc-law-firm-content article img {
+  max-width: 33%;
+  height: auto;
+}
+@media (min-width: 900px) {
+  #block-oc-law-firm-content article img {
+    max-width: 300px;
+  }
+}
+#block-oc-law-firm-content article img.align-right {
+  margin: 0 0 10px 20px;
+}
+#block-oc-law-firm-content article::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .button-link {
@@ -113,7 +132,7 @@ main {
   text-decoration: none;
   color: #fff;
 }
-#block-oc-law-firm-main-menu ul li a:hover {
+#block-oc-law-firm-main-menu ul li a:hover, #block-oc-law-firm-main-menu ul li a.is-active {
   color: #273b81;
 }
 @media (min-width: 900px) {
@@ -280,8 +299,8 @@ main {
 #footer #footer-columns > div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   padding: 40px 0 20px;
 }
 #footer #footer-columns > div h2 {
@@ -315,9 +334,11 @@ nav#block-resources ul {
   padding-left: 0;
 }
 nav#block-resources ul li {
-  border-top: 1px solid #ccc;
   padding: 6px 0;
   border-bottom: 1px solid #ccc;
+}
+nav#block-resources ul li:first-of-type {
+  border-top: 1px solid #ccc;
 }
 nav#block-resources ul a {
   text-decoration: none;
@@ -416,4 +437,86 @@ nav#block-resources ul a:hover {
     font-size: 24px;
     font-size: calc(100% + 0.6vw);
   }
+}
+
+/* bay-of-many */
+.members-container {
+  margin: 40px 0;
+}
+.members-container .member-row {
+  grid-template-columns: auto 1fr 1fr auto;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ebebeb;
+}
+@media (min-width: 900px) {
+  .members-container .member-row {
+    display: grid;
+  }
+}
+.members-container .member-row:last-of-type {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.members-container .member-row a {
+  color: #273b81;
+  text-decoration: none;
+}
+.members-container .member-row a:hover {
+  text-decoration: underline;
+}
+.members-container .member-row > div {
+  margin-bottom: 20px;
+}
+.members-container .member-row > div:last-of-type {
+  margin-bottom: 0;
+}
+@media (min-width: 900px) {
+  .members-container .member-row > div {
+    margin-bottom: 0;
+  }
+}
+.members-container .member-row .member-photo,
+.members-container .member-row .member-name,
+.members-container .member-row .member-link {
+  grid-row: 1/3;
+}
+.members-container .member-row .member-email {
+  grid-row: 1/2;
+  align-self: end;
+}
+.members-container .member-row .member-email a::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23999999' width='20' height='20' viewBox='0 0 24 24'%3E%3Ctitle%3Eemail%3C/title%3E%3Cpath d='M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z' /%3E%3C/svg%3E");
+  padding-right: 5px;
+  vertical-align: middle;
+}
+.members-container .member-row .member-phone {
+  grid-row: 2/3;
+  align-self: start;
+}
+.members-container .member-row .member-phone > div::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23999999' width='20' height='20' viewbox='0 0 24 24'%3E%3Cpath d='M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z'/%3E%3C/svg%3E");
+  padding-right: 5px;
+  vertical-align: middle;
+}
+.members-container .member-row .member-link {
+  background-color: #ebebeb;
+  padding: 13px 25px;
+  border-radius: 3px;
+  line-height: 1;
+  display: inline-block;
+}
+.members-container .member-row .member-link:hover {
+  background-color: #dcdcdc;
+}
+.members-container .member-row .member-link a {
+  color: unset;
+  text-decoration: none;
+}
+.members-container .member-row .member-link a::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23666666' width='20' height='20' viewBox='0 0 24 24'%3E%3Ctitle%3Echevron-right-circle%3C/title%3E%3Cpath d='M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10,18L16,12L10,6L8.6,7.4L13.2,12L8.6,16.6L10,18Z' /%3E%3C/svg%3E");
+  padding-left: 5px;
+  vertical-align: middle;
 }/*# sourceMappingURL=style.css.map */
