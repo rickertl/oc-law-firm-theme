@@ -77,6 +77,9 @@ main {
 #block-oc-law-firm-content article h2 {
   margin-top: 30px;
 }
+#block-oc-law-firm-content article p:last-of-type {
+  margin-bottom: 0;
+}
 #block-oc-law-firm-content article img {
   max-width: 33%;
   height: auto;
@@ -586,9 +589,6 @@ nav#block-resources ul a:hover {
 }
 #block-oc-law-firm-content article.team-member-content p:first-of-type {
   margin-top: 0;
-}
-#block-oc-law-firm-content article.team-member-content p:last-of-type {
-  margin-bottom: 0;
 }
 #block-oc-law-firm-content article.team-member-content .section-heading {
   display: grid;
