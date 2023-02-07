@@ -487,19 +487,25 @@ nav#block-resources ul a:hover {
   grid-row: 1/2;
   align-self: end;
 }
+.members-container .member-row .member-email a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .members-container .member-row .member-email a::before {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23999999' width='20' height='20' viewBox='0 0 24 24'%3E%3Ctitle%3Eemail%3C/title%3E%3Cpath d='M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z' /%3E%3C/svg%3E");
-  padding-right: 5px;
-  vertical-align: middle;
 }
 .members-container .member-row .member-phone {
   grid-row: 2/3;
   align-self: start;
 }
+.members-container .member-row .member-phone > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .members-container .member-row .member-phone > div::before {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23999999' width='20' height='20' viewbox='0 0 24 24'%3E%3Cpath d='M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z'/%3E%3C/svg%3E");
-  padding-right: 5px;
-  vertical-align: middle;
 }
 .members-container .member-row .member-link {
   background-color: #ebebeb;
@@ -514,9 +520,91 @@ nav#block-resources ul a:hover {
 .members-container .member-row .member-link a {
   color: unset;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .members-container .member-row .member-link a::after {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23666666' width='20' height='20' viewBox='0 0 24 24'%3E%3Ctitle%3Echevron-right-circle%3C/title%3E%3Cpath d='M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10,18L16,12L10,6L8.6,7.4L13.2,12L8.6,16.6L10,18Z' /%3E%3C/svg%3E");
-  padding-left: 5px;
-  vertical-align: middle;
+}
+
+#block-oc-law-firm-content article.team-member-content {
+  grid-template-columns: 250px 1fr;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+@media (min-width: 900px) {
+  #block-oc-law-firm-content article.team-member-content {
+    display: grid;
+  }
+}
+#block-oc-law-firm-content article.team-member-content a {
+  color: #273b81;
+  text-decoration: none;
+}
+#block-oc-law-firm-content article.team-member-content a:hover {
+  text-decoration: underline;
+}
+#block-oc-law-firm-content article.team-member-content .column-1 {
+  margin-bottom: 30px;
+}
+#block-oc-law-firm-content article.team-member-content .column-1 > div {
+  margin-bottom: 10px;
+}
+@media (min-width: 900px) {
+  #block-oc-law-firm-content article.team-member-content .column-1 > div {
+    margin-bottom: 30px;
+  }
+}
+#block-oc-law-firm-content article.team-member-content .column-1 img {
+  width: 100%;
+  max-width: 50%;
+}
+@media (min-width: 900px) {
+  #block-oc-law-firm-content article.team-member-content .column-1 img {
+    max-width: 300px;
+  }
+}
+#block-oc-law-firm-content article.team-member-content .column-1 .member-email a,
+#block-oc-law-firm-content article.team-member-content .column-1 .member-phone,
+#block-oc-law-firm-content article.team-member-content .column-1 .member-vcard a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#block-oc-law-firm-content article.team-member-content .column-1 .member-email a::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23999999' width='20' height='20' viewBox='0 0 24 24'%3E%3Ctitle%3Eemail%3C/title%3E%3Cpath d='M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z' /%3E%3C/svg%3E");
+}
+#block-oc-law-firm-content article.team-member-content .column-1 .member-phone::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23999999' width='20' height='20' viewbox='0 0 24 24'%3E%3Cpath d='M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z'/%3E%3C/svg%3E");
+}
+#block-oc-law-firm-content article.team-member-content .column-1 .member-vcard a::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23999999' width='20' height='20' viewBox='0 0 24 24'%3E%3Ctitle%3Efile-account%3C/title%3E%3Cpath d='M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M14,20V19C14,17.67 11.33,17 10,17C8.67,17 6,17.67 6,19V20H14M10,12A2,2 0 0,0 8,14A2,2 0 0,0 10,16A2,2 0 0,0 12,14A2,2 0 0,0 10,12Z' /%3E%3C/svg%3E");
+}
+#block-oc-law-firm-content article.team-member-content .column-1 .member-vcard span:nth-of-type(2) {
+  display: none;
+}
+#block-oc-law-firm-content article.team-member-content p:first-of-type {
+  margin-top: 0;
+}
+#block-oc-law-firm-content article.team-member-content p:last-of-type {
+  margin-bottom: 0;
+}
+#block-oc-law-firm-content article.team-member-content .section-heading {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+#block-oc-law-firm-content article.team-member-content .section-heading svg {
+  width: 24px;
+  height: 24px;
+  fill: #999999;
+}
+#block-oc-law-firm-content article.team-member-content .section-heading h2 {
+  margin: 0.83em 0;
+}
+#block-oc-law-firm-content article.team-member-content .section-heading .separator-line {
+  border-top: 1px solid #ebebeb;
 }/*# sourceMappingURL=style.css.map */
