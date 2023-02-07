@@ -553,7 +553,7 @@ nav#block-resources ul a:hover {
 }
 @media (min-width: 900px) {
   #block-oc-law-firm-content article.team-member-content .column-1 > div {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 #block-oc-law-firm-content article.team-member-content .column-1 img {
