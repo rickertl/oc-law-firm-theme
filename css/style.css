@@ -210,28 +210,12 @@ main {
 }
 
 /* Nav Animations */
-@-webkit-keyframes slidein {
-  from {
-    right: -100%;
-  }
-  to {
-    right: 0;
-  }
-}
 @keyframes slidein {
   from {
     right: -100%;
   }
   to {
     right: 0;
-  }
-}
-@-webkit-keyframes slideout {
-  from {
-    right: 0;
-  }
-  to {
-    right: -100%;
   }
 }
 @keyframes slideout {
@@ -242,28 +226,12 @@ main {
     right: -100%;
   }
 }
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes fadein {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
-  }
-}
-@-webkit-keyframes fadeout {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
   }
 }
 @keyframes fadeout {
@@ -275,23 +243,19 @@ main {
   }
 }
 .slidein {
-  -webkit-animation: slidein 1s;
-          animation: slidein 1s;
+  animation: slidein 1s;
 }
 
 .slideout {
-  -webkit-animation: slideout 1s;
-          animation: slideout 1s;
+  animation: slideout 1s;
 }
 
 .fadein {
-  -webkit-animation: fadein 1s;
-          animation: fadein 1s;
+  animation: fadein 1s;
 }
 
 .fadeout {
-  -webkit-animation: fadeout 1s;
-          animation: fadeout 1s;
+  animation: fadeout 1s;
 }
 
 /* bay-of-many */
@@ -316,7 +280,9 @@ main {
 
 .location-row {
   display: grid;
-  grid-template-columns: 40px 1fr;
+  grid-template-columns: 20px 1fr;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   margin-bottom: 20px;
   align-items: center;
 }
