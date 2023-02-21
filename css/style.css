@@ -4,6 +4,14 @@ body {
   color: #666;
 }
 
+a {
+  color: #273b81;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 header {
   position: fixed;
   background-color: #fff;
@@ -15,7 +23,7 @@ header {
 
 #header-container,
 #block-oc-law-firm-content,
-footer > div,
+#footer > div,
 #copyright > div {
   max-width: 1100px;
   margin: 0 auto;
@@ -71,28 +79,28 @@ main {
   font-weight: 600;
   color: #273b81;
 }
-#block-oc-law-firm-content article {
+#block-oc-law-firm-content > article {
   margin: 40px 0;
 }
-#block-oc-law-firm-content article h2 {
+#block-oc-law-firm-content > article h2 {
   margin-top: 30px;
 }
-#block-oc-law-firm-content article p:last-of-type {
+#block-oc-law-firm-content > article p:last-of-type {
   margin-bottom: 0;
 }
-#block-oc-law-firm-content article img {
+#block-oc-law-firm-content > article img {
   max-width: 33%;
   height: auto;
 }
 @media (min-width: 900px) {
-  #block-oc-law-firm-content article img {
+  #block-oc-law-firm-content > article img {
     max-width: 300px;
   }
 }
-#block-oc-law-firm-content article img.align-right {
+#block-oc-law-firm-content > article img.align-right {
   margin: 0 0 10px 20px;
 }
-#block-oc-law-firm-content article::after {
+#block-oc-law-firm-content > article::after {
   content: "";
   clear: both;
   display: table;
@@ -410,7 +418,8 @@ nav#block-resources ul a:hover {
 
 /* bay-of-many */
 .members-container {
-  margin: 40px 0;
+  max-width: 830px;
+  margin: 40px auto;
 }
 .members-container .member-row {
   grid-template-columns: auto 1fr 1fr auto;
@@ -573,4 +582,51 @@ nav#block-resources ul a:hover {
 }
 #block-oc-law-firm-content article.team-member-content .section-heading .separator-line {
   border-top: 1px solid #ebebeb;
+}
+
+/* bay-of-many */
+.articles-container {
+  max-width: 830px;
+  margin: 40px auto;
+}
+.articles-container .article-row {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ebebeb;
+}
+.articles-container .article-row:last-of-type {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.articles-container .article-row ul.links {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.articles-container .article-row ul.links li a {
+  display: inline-block;
+  color: #fff;
+  background-color: #273b81;
+  padding: 10px 15px;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+.articles-container .article-row ul.links li a:hover {
+  background-color: #999;
+}
+
+#block-oc-law-firm-content > article.full-article-content {
+  max-width: 830px;
+  margin: 40px auto;
+}
+#block-oc-law-firm-content > article.full-article-content h1 {
+  font-size: 21px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #273b81;
+}
+
+.created-date {
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

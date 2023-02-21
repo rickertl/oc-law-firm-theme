@@ -5,6 +5,14 @@ body {
   color: #666;
 }
 
+a {
+  color: $base-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 header {
   position: fixed;
   background-color: #fff;
@@ -16,7 +24,7 @@ header {
 
 #header-container,
 #block-oc-law-firm-content,
-footer > div,
+#footer > div,
 #copyright > div {
   max-width: $max-width;
   margin: 0 auto;
@@ -74,7 +82,7 @@ main {
     font-weight: 600;
     color: $base-color;
   }
-  article {
+  > article {
     margin: 40px 0;
     h2 {
       margin-top: 30px;

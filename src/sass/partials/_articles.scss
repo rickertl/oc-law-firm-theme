@@ -1,0 +1,47 @@
+@import "./variables";
+
+.articles-container {
+  max-width: $single-col-content;
+  margin: 40px auto;
+  .article-row {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ebebeb;
+    &:last-of-type {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    ul.links {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      li a {
+        display: inline-block;
+        color: #fff;
+        background-color: $base-color;
+        padding: 10px 15px;
+        border-radius: 3px;
+        text-decoration: none;
+        text-transform: lowercase;
+        &:hover {
+          background-color: #999;
+        }
+      }
+    }
+  }
+}
+
+#block-oc-law-firm-content > article.full-article-content {
+  max-width: $single-col-content;
+  margin: 40px auto;
+  h1 {
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: 600;
+    color: $base-color;
+  }
+}
+
+.created-date {
+  font-weight: 600;
+}
