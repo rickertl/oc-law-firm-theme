@@ -1,4 +1,3 @@
-/* bay-of-many */
 body {
   font-family: "Montserrat", sans-serif;
   color: #666;
@@ -118,7 +117,6 @@ main {
   background-color: #999;
 }
 
-/* bay-of-many */
 #block-oc-law-firm-main-menu ul {
   list-style-type: none;
   margin: 0;
@@ -266,7 +264,6 @@ main {
   animation: fadeout 1s;
 }
 
-/* bay-of-many */
 #footer {
   background-color: #ebebeb;
   color: #666666;
@@ -371,7 +368,6 @@ nav#block-resources ul a:hover {
   content: " - All Rights Reserved";
 }
 
-/* bay-of-many */
 .practice-areas-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -416,9 +412,7 @@ nav#block-resources ul a:hover {
   }
 }
 
-/* bay-of-many */
 .members-container {
-  max-width: 830px;
   margin: 40px auto;
 }
 .members-container .member-row {
@@ -584,7 +578,6 @@ nav#block-resources ul a:hover {
   border-top: 1px solid #ebebeb;
 }
 
-/* bay-of-many */
 .articles-container {
   max-width: 830px;
   margin: 40px auto;

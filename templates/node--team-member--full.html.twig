@@ -74,7 +74,7 @@
 		<div class="member-email">{{ content.field_email.0 }}</div>
 		<div class="member-phone">{{ content.field_phone.0 }}</div>
 		{% if content.field_vcard.0 %}
-			<div class="member-vcard">{{ content.field_vcard.0 }}</div>
+			<div class="member-vcard"><a href="{{ content.field_vcard.0 }}">vCard</a></div>
 		{% endif %}
 		{% if content.field_extras.0 and node.label == "Benjamin Berger" %}
 			{% include '@oc_law_firm/inc/ben-avvo.html' %}
@@ -93,37 +93,37 @@
 			</div>
 			<div class="member-education">{{ content.field_education.0 }}</div>
 		{% endif %}
-		{% if content.field_admissions_memberships.0 %}
+		{% if content.field_admissions.0 %}
 			<div class="section-heading">
 				<span class="separator-icon">
 					<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
 						<path d="M9 10A3.04 3.04 0 0 1 12 7A3.04 3.04 0 0 1 15 10A3.04 3.04 0 0 1 12 13A3.04 3.04 0 0 1 9 10M12 19L16 20V16.92A7.54 7.54 0 0 1 12 18A7.54 7.54 0 0 1 8 16.92V20M12 4A5.78 5.78 0 0 0 7.76 5.74A5.78 5.78 0 0 0 6 10A5.78 5.78 0 0 0 7.76 14.23A5.78 5.78 0 0 0 12 16A5.78 5.78 0 0 0 16.24 14.23A5.78 5.78 0 0 0 18 10A5.78 5.78 0 0 0 16.24 5.74A5.78 5.78 0 0 0 12 4M20 10A8.04 8.04 0 0 1 19.43 12.8A7.84 7.84 0 0 1 18 15.28V23L12 21L6 23V15.28A7.9 7.9 0 0 1 4 10A7.68 7.68 0 0 1 6.33 4.36A7.73 7.73 0 0 1 12 2A7.73 7.73 0 0 1 17.67 4.36A7.68 7.68 0 0 1 20 10Z"/></svg>
 				</span>
-				<h2>{{content.field_admissions_memberships['#title']}}</h2>
+				<h2>{{content.field_admissions['#title']}}</h2>
 				<span class="separator-line"></span>
 			</div>
-			<div class="member-admissions">{{ content.field_admissions_memberships.0 }}</div>
+			<div class="member-admissions">{{ content.field_admissions.0 }}</div>
 		{% endif %}
-		{% if content.field_representative_cases.0 %}
+		{% if content.field_cases.0 %}
 			<div class="section-heading">
 				<span class="separator-icon">
 					<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M19,20H4C2.89,20 2,19.1 2,18V6C2,4.89 2.89,4 4,4H10L12,6H19A2,2 0 0,1 21,8H21L4,8V18L6.14,10H23.21L20.93,18.5C20.7,19.37 19.92,20 19,20Z"/></svg>
 				</span>
-				<h2>{{content.field_representative_cases['#title']}}</h2>
+				<h2>{{content.field_cases['#title']}}</h2>
 				<span class="separator-line"></span>
 			</div>
-			<div class="member-cases">{{ content.field_representative_cases.0 }}</div>
+			<div class="member-cases">{{ content.field_cases.0 }}</div>
 		{% endif %}
-		{% if content.field_awards_public_speaking.0 %}
+		{% if content.field_awards.0 %}
 			<div class="section-heading">
 				<span class="separator-icon">
 					<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
 						<path d="M18 2C17.1 2 16 3 16 4H8C8 3 6.9 2 6 2H2V11C2 12 3 13 4 13H6.2C6.6 15 7.9 16.7 11 17V19.08C8 19.54 8 22 8 22H16C16 22 16 19.54 13 19.08V17C16.1 16.7 17.4 15 17.8 13H20C21 13 22 12 22 11V2H18M6 11H4V4H6V11M20 11H18V4H20V11Z"/></svg>
 				</span>
-				<h2>{{content.field_awards_public_speaking['#title']}}</h2>
+				<h2>{{content.field_awards['#title']}}</h2>
 				<span class="separator-line"></span>
 			</div>
-			<div class="member-speaking">{{ content.field_awards_public_speaking.0 }}</div>
+			<div class="member-speaking">{{ content.field_awards.0 }}</div>
 		{% endif %}
 	</div>
 </article>

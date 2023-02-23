@@ -1,7 +1,7 @@
 @import "./variables";
 
 .members-container {
-  max-width: $single-col-content;
+  // max-width: $single-col-content;
   margin: 40px auto;
   .member-row {
     @media (min-width: $desktop-start) {
