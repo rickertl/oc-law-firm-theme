@@ -90,14 +90,14 @@ main {
     p:last-of-type {
       margin-bottom: 0;
     }
+    .align-right {
+      margin: 0 0 10px 20px;
+    }
     img {
       max-width: 33%;
       height: auto;
       @media (min-width: $desktop-start) {
         max-width: 300px;
-      }
-      &.align-right {
-        margin: 0 0 10px 20px;
       }
     }
     &::after {

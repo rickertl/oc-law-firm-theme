@@ -87,6 +87,9 @@ main {
 #block-oc-law-firm-content > article p:last-of-type {
   margin-bottom: 0;
 }
+#block-oc-law-firm-content > article .align-right {
+  margin: 0 0 10px 20px;
+}
 #block-oc-law-firm-content > article img {
   max-width: 33%;
   height: auto;
@@ -95,9 +98,6 @@ main {
   #block-oc-law-firm-content > article img {
     max-width: 300px;
   }
-}
-#block-oc-law-firm-content > article img.align-right {
-  margin: 0 0 10px 20px;
 }
 #block-oc-law-firm-content > article::after {
   content: "";
