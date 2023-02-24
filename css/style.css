@@ -88,14 +88,16 @@ main {
   margin-bottom: 0;
 }
 #block-oc-law-firm-content > article .align-right {
-  margin: 0 0 10px 20px;
-}
-#block-oc-law-firm-content > article img {
   max-width: 33%;
   height: auto;
+  margin: 0 0 10px 20px;
+}
+#block-oc-law-firm-content > article .align-right img {
+  height: 100%;
+  width: 100%;
 }
 @media (min-width: 900px) {
-  #block-oc-law-firm-content > article img {
+  #block-oc-law-firm-content > article .align-right {
     max-width: 300px;
   }
 }
