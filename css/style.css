@@ -117,6 +117,7 @@ main {
 }
 .button-link:hover {
   background-color: #999;
+  text-decoration: none;
 }
 
 #block-oc-law-firm-main-menu ul {
@@ -305,23 +306,23 @@ main {
   line-height: 1.5;
 }
 
-nav#block-resources ul {
+nav#block-footer ul {
   list-style-type: none;
   padding-left: 0;
 }
-nav#block-resources ul li {
+nav#block-footer ul li {
   padding: 6px 0;
   border-bottom: 1px solid #ccc;
 }
-nav#block-resources ul li:first-of-type {
+nav#block-footer ul li:first-of-type {
   border-top: 1px solid #ccc;
 }
-nav#block-resources ul a {
+nav#block-footer ul a {
   text-decoration: none;
   color: #666;
   line-height: 1.5;
 }
-nav#block-resources ul a:hover {
+nav#block-footer ul a:hover {
   color: #273b81;
 }
 
