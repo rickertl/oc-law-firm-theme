@@ -122,3 +122,8 @@ main {
     text-decoration: none;
   }
 }
+
+.single-column {
+  max-width: $single-col-content;
+  margin: 0 auto;
+}

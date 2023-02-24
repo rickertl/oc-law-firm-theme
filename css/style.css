@@ -120,6 +120,11 @@ main {
   text-decoration: none;
 }
 
+.single-column {
+  max-width: 830px;
+  margin: 0 auto;
+}
+
 #block-oc-law-firm-main-menu ul {
   list-style-type: none;
   margin: 0;
