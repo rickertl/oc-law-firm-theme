@@ -73,6 +73,10 @@ nav#block-resources {
       flex-direction: row;
       justify-content: space-between;
     }
+    p {
+      margin: 0;
+      text-align: center;
+    }
     > div,
     #credits a {
       display: flex;
@@ -84,15 +88,15 @@ nav#block-resources {
           color: #fff;
         }
       }
-      #block-sitebranding {
-        text-align: center;
-        &::before {
-          content: "Copyright ";
-        }
-        &::after {
-          content: " - All Rights Reserved";
-        }
-      }
+      // #block-sitebranding {
+      //   text-align: center;
+      //   &::before {
+      //     content: "Copyright ";
+      //   }
+      //   &::after {
+      //     content: " - All Rights Reserved";
+      //   }
+      // }
     }
   }
 }

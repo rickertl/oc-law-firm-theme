@@ -343,6 +343,10 @@ nav#block-resources ul a:hover {
     justify-content: space-between;
   }
 }
+#copyright #copyright-inner-container p {
+  margin: 0;
+  text-align: center;
+}
 #copyright #copyright-inner-container > div,
 #copyright #copyright-inner-container #credits a {
   display: flex;
@@ -356,18 +360,6 @@ nav#block-resources ul a:hover {
 #copyright #copyright-inner-container > div a:hover,
 #copyright #copyright-inner-container #credits a a:hover {
   color: #fff;
-}
-#copyright #copyright-inner-container > div #block-sitebranding,
-#copyright #copyright-inner-container #credits a #block-sitebranding {
-  text-align: center;
-}
-#copyright #copyright-inner-container > div #block-sitebranding::before,
-#copyright #copyright-inner-container #credits a #block-sitebranding::before {
-  content: "Copyright ";
-}
-#copyright #copyright-inner-container > div #block-sitebranding::after,
-#copyright #copyright-inner-container #credits a #block-sitebranding::after {
-  content: " - All Rights Reserved";
 }
 
 .practice-areas-container {
@@ -533,6 +525,7 @@ nav#block-resources ul a:hover {
 #block-oc-law-firm-content article.team-member-content .column-1 img {
   width: 100%;
   max-width: 50%;
+  height: auto;
 }
 @media (min-width: 900px) {
   #block-oc-law-firm-content article.team-member-content .column-1 img {

@@ -110,6 +110,7 @@
       img {
         width: 100%;
         max-width: 50%;
+        height: auto;
         @media (min-width: $desktop-start) {
           max-width: 300px;
         }
