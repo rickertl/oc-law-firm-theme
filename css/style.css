@@ -588,16 +588,7 @@ nav#block-footer ul a:hover {
   padding-bottom: 30px;
   border-bottom: 1px solid #ebebeb;
 }
-.articles-container .article-row:last-of-type {
-  padding-bottom: 0;
-  border-bottom: none;
-}
-.articles-container .article-row ul.links {
-  list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-.articles-container .article-row ul.links li a {
+.articles-container .article-row a.more-link {
   display: inline-block;
   color: #fff;
   background-color: #273b81;
@@ -606,8 +597,12 @@ nav#block-footer ul a:hover {
   text-decoration: none;
   text-transform: lowercase;
 }
-.articles-container .article-row ul.links li a:hover {
+.articles-container .article-row a.more-link:hover {
   background-color: #999;
+}
+.articles-container .article-row:last-of-type {
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 #block-oc-law-firm-content > article.full-article-content {
