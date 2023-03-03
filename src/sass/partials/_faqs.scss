@@ -1,0 +1,30 @@
+@import "./variables";
+
+.faqs {
+  max-width: $single-col-content;
+  margin: 40px auto;
+  .faq-question {
+    padding: 10px 12px;
+    background-color: #ebebeb;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: 400;
+    &:hover {
+      color: $base-color;
+    }
+    &::before {
+      content: "\0002B";
+      font-size: 22px;
+      font-weight: 600;
+      padding-right: 5px;
+      vertical-align: text-bottom;
+      line-height: 1;
+    }
+    &.active::before {
+      content: "\02212";
+    }
+  }
+  .faq-answer {
+    display: none;
+  }
+}

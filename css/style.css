@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Montserrat", sans-serif;
   color: #666;
@@ -618,4 +619,33 @@ nav#block-footer ul a:hover {
 
 .created-date {
   font-weight: 600;
+}
+
+.faqs {
+  max-width: 830px;
+  margin: 40px auto;
+}
+.faqs .faq-question {
+  padding: 10px 12px;
+  background-color: #ebebeb;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-weight: 400;
+}
+.faqs .faq-question:hover {
+  color: #273b81;
+}
+.faqs .faq-question::before {
+  content: "+";
+  font-size: 22px;
+  font-weight: 600;
+  padding-right: 5px;
+  vertical-align: text-bottom;
+  line-height: 1;
+}
+.faqs .faq-question.active::before {
+  content: "−";
+}
+.faqs .faq-answer {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
