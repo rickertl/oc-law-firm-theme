@@ -6,6 +6,7 @@ base theme: stable9
 regions:
   header: Header
   primary_menu: "Primary menu"
+  homepage_content: "Homepage Content"
   content: Content
   footer: Footer
   copyright: Copyright
