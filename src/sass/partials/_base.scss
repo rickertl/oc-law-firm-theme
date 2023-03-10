@@ -23,7 +23,10 @@ header {
 }
 
 #header-container,
-#block-oc-law-firm-content,
+// #block-oc-law-firm-content,
+.homepage-content > div > div:not(#hero),
+.layout-content > div > div:not(#block-oc-law-firm-page-title),
+.contained,
 #footer > div,
 #copyright > div {
   max-width: $max-width;

@@ -22,7 +22,9 @@ header {
 }
 
 #header-container,
-#block-oc-law-firm-content,
+.homepage-content > div > div:not(#hero),
+.layout-content > div > div:not(#block-oc-law-firm-page-title),
+.contained,
 #footer > div,
 #copyright > div {
   max-width: 1100px;
@@ -271,6 +273,63 @@ main {
 
 .fadeout {
   animation: fadeout 1s;
+}
+
+#hero {
+  width: 100%;
+  height: calc(100vh - 72px);
+  min-height: 360px;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#hero #hero-message {
+  display: grid;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(39, 59, 129, 0.8);
+}
+#hero #hero-message .hero-line1 {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  padding: 0 1.25rem;
+}
+#hero #hero-message .hero-line2 {
+  font-size: 38px;
+  line-height: 2rem;
+  font-weight: 300;
+  margin-bottom: 6rem;
+}
+#hero #hero-message .hero-button {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding: 1.25rem;
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #fff;
+}
+#hero #hero-message .hero-button:hover {
+  background-color: #fff;
+  color: #273b81;
+  text-decoration: none;
+}
+#hero #hero-message svg.hero-more {
+  color: rgba(255, 255, 255, 0.7);
+  width: 28px;
+  height: 28px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2rem;
+}
+#hero #hero-message svg.hero-more:hover {
+  color: #fff;
 }
 
 #footer {
