@@ -56,31 +56,33 @@ headlines.forEach((element) => {
 });
 
 // faqs
-const faqs = document.querySelector(".faqs");
-const faq_containers = faqs.querySelectorAll(".faq-container");
+if (document.querySelector(".faqs")) {
+  const faqs = document.querySelector(".faqs");
+  const faq_containers = faqs.querySelectorAll(".faq-container");
 
-faq_containers.forEach((item) => {
-  item.addEventListener("click", () => {
-    activateFAQ(item), false;
-  }),
-    false;
-});
-
-// make faq active
-function activateFAQ(item) {
-  refreshFAQs();
-  item.querySelector(".faq-question").classList.add("active");
-  item.querySelector(".faq-answer").style.display = "block";
-  item.addEventListener("click", () => {
-    refreshFAQs();
-  });
-}
-
-// clear added styles and classes from faqs
-function refreshFAQs() {
   faq_containers.forEach((item) => {
-    item.querySelector(".faq-question").classList.remove("active");
-    item.querySelector(".faq-answer").removeAttribute("style");
-  }),
-    false;
+    item.addEventListener("click", () => {
+      activateFAQ(item), false;
+    }),
+      false;
+  });
+
+  // make faq active
+  function activateFAQ(item) {
+    refreshFAQs();
+    item.querySelector(".faq-question").classList.add("active");
+    item.querySelector(".faq-answer").style.display = "block";
+    item.addEventListener("click", () => {
+      refreshFAQs();
+    });
+  }
+
+  // clear added styles and classes from faqs
+  function refreshFAQs() {
+    faq_containers.forEach((item) => {
+      item.querySelector(".faq-question").classList.remove("active");
+      item.querySelector(".faq-answer").removeAttribute("style");
+    }),
+      false;
+  }
 }
